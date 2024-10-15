@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Alt Text and ARIA Label Helper</title>
+  <style>
+    body {
+      font-family: poppins, sans-serif;
+      width: 400px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    select {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+      font-family: poppins, sans-serif;
+      border-color: #ABBDCF;
+      border-radius: 4px;
+      color: #242A30;
+      text-overflow: ellipsis;
+    }
+
+    #suggestion-output {
+      margin-top: 15px;
+      font-size: 14px;
+      font-family: poppins, sans-serif;
+      color: #242A30;
+    }
+
+    pre {
+      background-color: #F2F7FD;
+      padding: 10px;
+      border: 1px solid #BFD9F4;
+      white-space: pre-wrap;
+    }
+
+    h3 {
+      margin-bottom: 4px;
+      color: #001A35;
+    }
+
+    h2 {
+      margin-top: 5px;
+      color: #00050B;
+    }
+
+    span{
+      font-weight: bold;
+      color: #0067d2;
+    }
+
+    a{
+      color: #0067d2;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Alt Text and ARIA Label Helper 1.0</h2>
+  <h3>Select Element Type</h3>
+  <select id="element-type">
+    <option value="image">Image</option>
+    <option value="icon">Icon</option>
+    <option value="button">Button</option>
+    <option value="input">Input</option>
+    <option value="control">Control</option>
+  </select>
+  <br>
+  <h3>Select Purpose</h3>
+  <select id="purpose"></select>
+
+  <div id="suggestion-output"></div>
+
+  <script src="popup.js"></script>
+
+  <a href="#" id="documentLink">Click here</a> to view the detailed document.
+ <br>
+  <p style="border-top: 1px solid; padding-top: 10px;"> For help or inquiry regarding the plugin please reachout to <span>sujith.anand@mitratech.com</span></p></body>
+
+</html>
